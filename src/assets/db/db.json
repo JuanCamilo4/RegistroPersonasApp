@@ -1,0 +1,22 @@
+{
+  "personas": [
+    {
+      "id": "1",
+      "nombre": "Juan Camilo",
+      "fecha_nacimiento": "04/04/2001",
+      "sexo": "Maculino"
+    },
+    {
+      "id": "2",
+      "nombre": "Julie Rios",
+      "fecha_nacimiento": "10/10/1996",
+      "sexo": "Femenino"
+    },
+    {
+      "nombre": "Edgar",
+      "fecha_nacimiento": "21/04/1754",
+      "sexo": "Masculino",
+      "id": "_DfQfvm"
+    }
+  ]
+}
