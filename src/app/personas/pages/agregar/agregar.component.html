@@ -1,0 +1,31 @@
+<div class="container-add">
+    <h2>Agregar Usuario</h2>
+    
+    <div class="container-form">
+        <div>
+            <p>
+                <mat-form-field appearance="outline">
+                    <mat-label>Nombre completo del usuario</mat-label>
+                    <input matInput placeholder="nombre">
+                    <mat-hint>Obligatorio*</mat-hint>
+                </mat-form-field>
+            </p>
+            <p>
+                <mat-form-field appearance="outline">
+                    <mat-label>Fecha de nacimiento</mat-label>
+                    <input type="date" matInput placeholder="Fecha">
+                    <mat-hint>Obligatorio*</mat-hint>
+                </mat-form-field>
+            </p>
+        </div>
+        <mat-form-field appearance="fill">
+            <mat-label>Favorite food</mat-label>
+            <mat-select [(ngModel)]="sexo" name="food">
+              <mat-option *ngFor="let genero of generos" [value]="genero">
+                {{genero}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+    </div>
+      
+</div>

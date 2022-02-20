@@ -1,0 +1,35 @@
+<div class="container-filter">
+    <h2>Listado de personas</h2>
+
+    <button mat-raised-button
+            color="primary"
+            (click)="cambiarOrden()"
+            title="Puede ordenar los resultado según el sexo">
+        Filtrar por sexo
+        <mat-icon>sort</mat-icon>
+    </button>
+</div>
+
+<table mat-table [dataSource]="dataSource | ordenar:cambiarOrdenPipe" class="mat-elevation-z8">
+
+    <ng-container matColumnDef="nombre">
+      <th mat-header-cell *matHeaderCellDef> Nombre </th>
+      <td mat-cell *matCellDef="let element"> {{element.nombre}} </td>
+    </ng-container>
+  
+    <ng-container matColumnDef="fecha_nacimiento">
+      <th mat-header-cell *matHeaderCellDef> Fecha de nacimiento </th>
+      <td mat-cell *matCellDef="let element"> {{element.fecha_nacimiento}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="sexo">
+      <th mat-header-cell *matHeaderCellDef> Sexo </th>
+      <td mat-cell *matCellDef="let element"> {{element.sexo}} </td>
+    </ng-container>
+  
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+</table>
+  
+  

@@ -1,0 +1,14 @@
+.container-add{
+    width: 80%;
+    margin: 0 auto;
+}
+.container-form{
+    width: 50%;
+}
+.container-form div{
+    display: flex;
+    justify-content: space-between;
+}
+.container-form input{
+    width: 10rem;
+}
