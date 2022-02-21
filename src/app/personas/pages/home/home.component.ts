@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  visible: boolean = true;
+  visible: boolean = false;
 
   constructor() { }
 
