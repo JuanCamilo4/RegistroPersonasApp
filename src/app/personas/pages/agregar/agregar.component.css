@@ -1,3 +1,14 @@
+button{
+    margin-top: 1.3rem;
+}
+mat-divider{
+    margin-bottom: 1.5rem;
+}
+.container-register{
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+}
 .container-add{
     width: 80%;
     margin: 0 auto;
@@ -8,7 +19,23 @@
 .container-form div{
     display: flex;
     justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1rem;
 }
 .container-form input{
     width: 10rem;
+}
+.form-input{
+    width: 18rem;
+}
+
+.info-user{
+    width: 40%;
+    border: 1px solid rgb(189, 189, 189);
+    border-radius: 5px;
+    padding: 1.2rem;
+    box-sizing: border-box;
+}
+.info-user p{
+    font-size: 1.1rem;
 }

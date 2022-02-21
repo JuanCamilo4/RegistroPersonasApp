@@ -8,6 +8,7 @@ import { AppRoutingModule } from '../app-routing.module';
 import { MaterialModule } from '../material/material.module';
 import { OrdenarPipe } from './pipes/ordenar.pipe';
 import { FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -22,6 +23,7 @@ import { FormsModule } from '@angular/forms';
   imports: [
     CommonModule,
     AppRoutingModule,
+    RouterModule,
     MaterialModule,
     FormsModule
   ],

@@ -12,9 +12,7 @@ export class ListadoComponent implements OnInit {
   count: number = 1;
   cambiarOrdenPipe: string = 'nada';
 
-  personasArray: Persona[] = []; //Arreglo con los datos de la tabla
-  displayedColumns: string[] = ['nombre', 'fecha_nacimiento', 'sexo'];
-  dataSource: Persona[] = [];
+  personas: Persona[] = []; //Arreglo con los datos de la tabla
 
   constructor(private personaService: PersonasService) {
     this.getPersonas();
@@ -39,9 +37,13 @@ export class ListadoComponent implements OnInit {
   getPersonas() {
     this.personaService.getPersonas()
       .subscribe(persona => {
-        this.personasArray = persona;
-        this.dataSource = this.personasArray;
+        this.personas = persona;
       })
+  }
+
+  deletePersona(id: string){
+    let respuesta = confirm('¿Está seguro que quiere de eliminalo?');
+    if (respuesta) this.personaService.deletePersona(id).subscribe();
   }
 
 }

@@ -25,9 +25,9 @@ export class OrdenarPipe implements PipeTransform {
       });
 
       if (ordenarBy == 'M') {
-        return this.arrayHombres.concat(this.arrayMujeres);
+        return this.arrayHombres;
       } else {
-        return this.arrayMujeres.concat(this.arrayHombres);
+        return this.arrayMujeres;
       }
     }
   }

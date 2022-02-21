@@ -14,4 +14,20 @@ export class PersonasService {
     return this.http.get<Persona[]>('http://localhost:3000/personas');
   }
 
+  getPersonasById(id: string): Observable<Persona> {
+    return this.http.get<Persona>(`http://localhost:3000/personas/${id}`);
+  }
+
+  postPersonas(persona: Persona): Observable<Persona> {
+    return this.http.post<Persona>('http://localhost:3000/personas', persona);
+  }
+
+  putPersonas(persona: Persona): Observable<Persona> {
+    return this.http.put<Persona>(`http://localhost:3000/personas/${persona.id}`, persona);
+  }
+
+  deletePersona(id: string): Observable<{}> {
+    return this.http.delete(`http://localhost:3000/personas/${id}`);
+  }
+
 }

@@ -15,7 +15,7 @@ const route = [
     component: AgregarComponent
   },
   {
-    path: 'editar/:id',
+    path: 'agregar/:id',
     component: AgregarComponent
   },
   {
