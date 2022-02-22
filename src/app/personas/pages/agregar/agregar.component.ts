@@ -11,7 +11,7 @@ import { switchMap } from "rxjs/operators";
 })
 export class AgregarComponent implements OnInit {
 
-  generos: string[] = ['Masculino', 'Femenino'];
+  generos: string[] = ['masculino', 'femenino'];
   guardado: boolean = false;
   fechaActual = new Date();
   fechaFormato: any = '';
